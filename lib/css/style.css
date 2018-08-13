@@ -204,7 +204,7 @@ p {
 }
 
 #third {
-	/* margin-bottom: 24px; */
+	margin-bottom: 24px;
 	font-family: "Roboto",Helvetica,Arial,sans-serif;
 	background-image:  -webkit-linear-gradient(left, #9b59b6 0%, #34495e 100%);
 	background-image:  -moz-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
@@ -298,7 +298,7 @@ hr {
   background-image: -moz-linear-gradient(left, blue  0%, #34495e 100%);
   background-image: -o-linear-gradient(left, blue  0%, #34495e 100%);
   background-image: linear-gradient(to right, blue  0%, #34495e 100%);
-  background-image: -webkit-linear-gradient(90deg, blue  0%, #34495 100%);
+  background-image: -webkit-linear-gradient(90deg, blue  0%, #34495e 100%);
   background-image: -ms-linear-gradient(90deg, blue  0%, #34495e 100%);
 }
 .icons .fa-github:hover, .icons .fa-github:focus {    
