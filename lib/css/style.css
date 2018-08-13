@@ -3,16 +3,13 @@ html, body {
 	margin: 0px;
 	
 }
-
 html {
 	background: #eeecec;
 	overflow-x: hidden;
 }
-
 #container {
 	z-index: 111;
 }
-
 .navT {
 	-webkit-transition: all 0.25s;
 	z-index: 111;
@@ -24,7 +21,6 @@ html {
 	top: 0;
 	position: fixed;
 }
-
 .navT .icon {
 	-webkit-transition: all 0.25s;
 	position: absolute;
@@ -34,7 +30,6 @@ html {
 	top: 30px;
 	background-color: white;
 }
-
 .navT .icon:before, .navT .icon:after {
 	-webkit-transition: all 0.25s;
 	width: 30px;
@@ -44,45 +39,35 @@ html {
 	position: absolute;
 	content: '';
 }
-
 .navT .icon:before {
 	top: -10px;
 }
-
 .navT .icon:after {
 	top: 10px;
 }
-
 .navT:hover {
 	background: black;
 }
-
 .navT:hover .icon:before {
 	top: -12px;
 }
-
 .navT:hover .icon:after {
 	top: 12px;
 }
-
 .navT.active .icon {
 	-webkit-transform: rotate(180deg);
 	background-color: transparent;
 	left: 10px;
 }
-
 .navT.active .icon:before, .navT.active .icon:after {
 	top: 0;
 }
-
 .navT.active .icon:before {
 	-webkit-transform: rotate(45deg);
 }
-
 .navT.active .icon:after {
 	-webkit-transform: rotate(-45deg);
 }
-
 #menu {
 	z-index: 111;
 	-webkit-transition: all 0.5s;
@@ -101,24 +86,20 @@ html {
 	border-bottom: 1px solid transparent;
 	overflow: hidden;
 }
-
 #menu ul {
 	list-style: none;
 	padding: 0;
 	letter-spacing: 0.4em;
 }
-
 #menu li:first-child {
 	margin-top: 0;
 }
-
 #menu li {
 	-webkit-transition: all 0.2s;
 	margin-top: 20px;
 	padding: 5px 0;
 	color:white;
 }
-
 #menu a {
 	padding: 8px;
 	-webkit-transition: all 0.25s;
@@ -129,36 +110,32 @@ html {
 	letter-spacing: 0.5em;
 	text-decoration: underline;
 }
-
 #menu.open {
 	height: 175px;
 	width: 100%;
-	background: #f3581b;
+	background: #e76c1b;
 	border-bottom: 1px solid black;
 }
-
 .space {
 	letter-spacing: 0;
 }
-
 .content {
+	height:100%;
 	width: 100%;
 	font-size: 20px;
 	font-family: sans-serif;
 	font-weight: 100;
 	-webkit-transition: top 0.5s;
 	position: absolute;
-	top: 65px;
+	top: 50px;
 	margin: 0 auto;
 }
-
 .content h1 {
 	font-size: 3em;
 	text-transform: uppercase;
 	margin-top: 85px;
 	margin-left: 10px;
 }
-
 .content h2 {
 	font-size: 1em;
 	text-transform: uppercase;
@@ -167,11 +144,9 @@ html {
 	font-weight: 400;
 	letter-spacing: 0.7em;
 }
-
 .content.shift {
-	top: 335px;
+	top: 225px;
 }
-
 p {
 	max-width: 600px;
 	font-size: 0.75em;
@@ -179,7 +154,6 @@ p {
 	text-align: left;
 	margin-left: 10px;
 }
-
 #second {
 	left: 0;
 	width: 100%;
@@ -188,43 +162,23 @@ p {
 	margin-top: 200px;
 	text-align: center;
 }
-
 #second h1, #second h2 {
 	margin-right: 20px;
 }
-
 #second h1 {
 	padding-top: 40px;
 }
-
 #second p {
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
-
-#third {
-	margin-bottom: 24px;
-	font-family: "Roboto",Helvetica,Arial,sans-serif;
-	background-image:  -webkit-linear-gradient(left, #9b59b6 0%, #34495e 100%);
-	background-image:  -moz-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
-	background-image:  -o-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
-	background-image:  linear-gradient(to right, #9b59b6 0%, #e74c3c 100%);
-	background-image: -webkit-linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%);
-	background-image: -ms-linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%);
-	height: 100%;
-	width: 100%;
-	height: 300px;
-	padding-top: 50px;
-}
-
-#third h2 {
+footer h2 {
 	color: white;
 	text-align: center;
 	margin-top: 50px;
 }
-
-#third h5 {
+footer h5 {
 	color: white;
 	font-family: sans-serif;
 	text-transform: uppercase;
@@ -232,20 +186,12 @@ p {
 	letter-spacing: 0.25em;
 	text-align: center;
 }
-
-
 /* Soical Buttons */
-
-footer{
- padding: 20px 0; 
- text-align:center;
-}
 
 hr {
     border-color: rgba(255, 255, 255, 0.23);
     width: 40%;
 }
-
 .icons li {
   display:inline-block; 
   margin: 0 4px;
@@ -282,15 +228,7 @@ hr {
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
 }
-.icons .fa-slack:hover, .icons .fa-slack:focus { 
-	 
-  background-image: -webkit-linear-gradient(left, white 0%, gray 100%);
-  background-image: -moz-linear-gradient(left, white 0%, white 100%);
-  background-image: -o-linear-gradient(left, white 0%, white 100%);
-  background-image: linear-gradient(to right, white 0%, white 100%);
-  background-image: -webkit-linear-gradient(90deg, white 0%, gray 100%);
-  background-image: -ms-linear-gradient(90deg, white 0%, gray 100%);
-}
+
 
 .icons .fa-facebook:hover, .icons .fa-facebook:focus {
 	color:white;
@@ -310,17 +248,6 @@ hr {
   background-image: -ms-linear-gradient(90deg, darkred 0%, #e74c3c 100%);
 
 }
-
-.icons .fa-snapchat-ghost:hover, .icons .fa-snapchat-ghost:focus {    
-  background-image: -webkit-linear-gradient(left, #FFFB00 0%, yellow 100%);
-  background-image: -moz-linear-gradient(left, #FFFB00 0%, yellow 100%);
-  background-image: -o-linear-gradient(left, #FFFB00  0%, yellow  100%);
-  background-image: linear-gradient(to right, #FFFB00 0%, yellow  100%);
-  background-image: -webkit-linear-gradient(90deg, #FFFB00 0% gray 100%);
-  background-image: -ms-linear-gradient(90deg, #FFFB00 0%, yellow  100%);
-
-}
-
 .icons .fa-envelope:hover, .icons .fa-envelope:focus {    
 	background-image: -webkit-linear-gradient(left, white 0%, #FFFB00 100%);
 	background-image: -moz-linear-gradient(left, white 0%, #FFFB00 100%);
@@ -328,8 +255,161 @@ hr {
 	background-image: linear-gradient(to right, white 0%, #FFFB00 100%);
 	background-image: -webkit-linear-gradient(90deg, white 0%, gray  100%);
 	background-image: -ms-linear-gradient(90deg, white 0%, #FFFB00 100%);
-	
-  
   }
-  
 
+  .form {
+	  text-align: center;
+  }
+  #left_container{
+	
+	height: 500px;
+	width:20%;
+    background-color: rgb(223, 149, 11);
+    padding-top: 20px;
+  }
+  ul{
+	list-style-type:none;
+	height: 100%;
+	
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+
+body {
+    color: #858585;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+h4,
+.h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    width: 1170px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team
+{
+    width: 370px;
+    min-height: 100%;
+    border: 1px solid rgba(133,133,133,.15);
+    background-color: #fff;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.09);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.09);
+    box-shadow: 0 0 8px rgba(0,0,0,.09);
+    float: left;
+    margin-left: 16px;
+}
+.teamimg
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -80px;
+    width:170px;
+    height:170px;
+    background: #1bbc9d;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
+}
+
+.teamsocial
+{
+    height: 48px;
+    background-color: #f7f5f5;
+    position: relative;
+    bottom: -14px;
+    left: 0;
+}
+
+.facebook-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+}
+.linkedin-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+}
+.github-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+}
+.twitter-team
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+    color: #D1CFCF;
+    display:block;
+    font-size:30px;
+    padding: 7px;
+}
+
+.facebook-team:hover
+{
+    color: #3B5998;
+}
+
+.twitter-team:hover
+{
+    color: #29B3E1;
+}
+
+.google-team:hover
+{
+    color: #DE5845;
+}
+
+.pinterest-team:hover
+{
+    color: #C51C23;
+}
+#right_container{
+	height: 1000px;
+	width:20%;
+    padding-top: 20px;
+}
+.main_footer {
+	position: absolute;
+	text-align: center;
+	font-family: "Roboto",Helvetica,Arial,sans-serif;
+	background-image:  -webkit-linear-gradient(left, #9b59b6 0%, #34495e 100%);
+	background-image:  -moz-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
+	background-image:  -o-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
+	background-image:  linear-gradient(to right, #9b59b6 0%, #e74c3c 100%);
+	background-image: -webkit-linear-gradient(90deg, #9b59b6 0%, #e7723c 100%);
+	background-image: -ms-linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%);
+	/* height: 100%; */
+	width: 100%;
+	height: 300px;
+	padding-top: 50px;
+}
