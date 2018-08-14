@@ -1,7 +1,6 @@
 html, body {
 	width: 100%;
 	margin: 0px;
-	
 }
 html {
 	background: #eeecec;
@@ -125,11 +124,13 @@ html {
 	font-size: 20px;
 	font-family: sans-serif;
 	font-weight: 100;
-	-webkit-transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 	position: absolute;
 	top: 100px;
 	margin: 0 auto;
 }
+
 .content h1 {
 	font-size: 3em;
 	text-transform: uppercase;
@@ -206,7 +207,7 @@ footer{
  text-align:center;
 }
 hr {
-    border-color: rgba(255, 255, 255, 0.23);
+    border-color:none;
     width: 40%;
 }
 .icons li {
@@ -305,13 +306,17 @@ hr {
 	
   }
   .mapouter{
-	height: 100%;
-    width: 50%;
-	border: 10px solid green;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+    position: relative;
+	  height: 100%;
+    width: 80%;
+    border: 10px solid green;
+    margin-left: 370px; 
+    display: flex;
+    flex-direction: row;
+	  /* justify-content: center;*/
+    justify-content:center;
+    align-items:flex-end;
+    
   }
 
   
@@ -455,7 +460,203 @@ h4,
 /* this is contact form */
 
 #success_message{ display: none;}
+html, body {
+  width: 100%;
+  height: 100%;
+}
 
+body {
+  font: 1.2em/1.4 'Oswald', sans-serif;
+  color: #fff;
+  text-align: right;
+}
 
+.rolldown-list {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
 
+.rolldown-list li {
+  padding: 1em;
+  margin-bottom: .125em;
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+}
 
+.rolldown-list li {
+  visibility: hidden;
+  -webkit-animation: rolldown 5s 1;
+          animation: rolldown 5s 1;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.rolldown-list li:nth-child(2n) {
+  background-color: #444;
+}
+
+.rolldown-list li:nth-child(2n+1) {
+  background-color: #333;
+}
+
+#myList {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+
+#btnReload {
+  float: right;
+  color: #333;
+  background: #ccc;
+  text-transform: uppercase;
+  border: none;
+  padding: .5em 1em;
+}
+
+#btnReload:hover {
+  background: #ddd;
+}
+
+@-webkit-keyframes rolldown {
+  0% {
+    visibility: visible;
+    -webkit-transform: rotateX(180deg) perspective(500px);
+            transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes rolldown {
+  0% {
+    visibility: visible;
+    -webkit-transform: rotateX(180deg) perspective(500px);
+            transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 1.2em/1.4 'Oswald', sans-serif;
+  color: #fff;
+  text-align: right;
+}
+
+.rolldown-list {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.rolldown-list li {
+  padding: 1em;
+  margin-bottom: .125em;
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.rolldown-list li {
+  visibility: hidden;
+  -webkit-animation: rolldown .7s 1;
+          animation: rolldown .7s 1;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.rolldown-list li:nth-child(2n) {
+  background-color: #444;
+}
+
+.rolldown-list li:nth-child(2n+1) {
+  background-color: #333;
+}
+
+#myList {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+
+#btnReload {
+  float: right;
+  color: #333;
+  background: #ccc;
+  text-transform: uppercase;
+  border: none;
+  padding: .5em 1em;
+}
+
+#btnReload:hover {
+  background: #ddd;
+}
+
+@-webkit-keyframes rolldown {
+  0% {
+    visibility: visible;
+    -webkit-transform: rotateX(180deg) perspective(500px);
+            transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes rolldown {
+  0% {
+    visibility: visible;
+    -webkit-transform: rotateX(180deg) perspective(500px);
+            transform: rotateX(180deg) perspective(500px);
+  }
+  70% {
+    visibility: visible;
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+.first first_home{
+    
+
+}
