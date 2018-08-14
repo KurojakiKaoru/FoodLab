@@ -127,7 +127,7 @@ html {
 	font-weight: 100;
 	-webkit-transition: top 0.5s;
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	margin: 0 auto;
 }
 .content h1 {
@@ -145,7 +145,7 @@ html {
 	letter-spacing: 0.7em;
 }
 .content.shift {
-	top: 225px;
+	top: 275px;
 }
 p {
 	max-width: 600px;
@@ -159,7 +159,7 @@ p {
 	width: 100%;
 	background: #999;
 	height: 600px;
-	margin-top: 200px;
+	
 	text-align: center;
 }
 #second h1, #second h2 {
@@ -173,12 +173,26 @@ p {
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
-footer h2 {
+#third {
+	/* margin-bottom: 24px; */
+	font-family: "Roboto",Helvetica,Arial,sans-serif;
+	background-image:  -webkit-linear-gradient(left, #9b59b6 0%, #34495e 100%);
+	background-image:  -moz-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
+	background-image:  -o-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
+	background-image:  linear-gradient(to right, #9b59b6 0%, #e74c3c 100%);
+	background-image: -webkit-linear-gradient(90deg, #9b59b6 0%, #e7723c 100%);
+	background-image: -ms-linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%);
+	height: 100%;
+	width: 100%;
+	height: 300px;
+	padding-top: 50px;
+}
+#third h2 {
 	color: white;
 	text-align: center;
 	margin-top: 50px;
 }
-footer h5 {
+#third h5 {
 	color: white;
 	font-family: sans-serif;
 	text-transform: uppercase;
@@ -187,7 +201,10 @@ footer h5 {
 	text-align: center;
 }
 /* Soical Buttons */
-
+footer{
+ padding: 20px 0; 
+ text-align:center;
+}
 hr {
     border-color: rgba(255, 255, 255, 0.23);
     width: 40%;
@@ -256,31 +273,59 @@ hr {
 	background-image: -webkit-linear-gradient(90deg, white 0%, gray  100%);
 	background-image: -ms-linear-gradient(90deg, white 0%, #FFFB00 100%);
   }
-
+  #first{
+	
+	height: 100%;
+	width:20%;
+	
+  }
+.first{
+	height: 700px;
+	width:100%;
+}
+  .first_home{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+  
+  }
+  #first_content{
+	height: 1500px;
+	width:20%;
+  }
   .form {
 	  text-align: center;
   }
   #left_container{
-	
-	height: 500px;
-	width:20%;
+	height: 90%;
+    width: 20%;
     background-color: rgb(223, 149, 11);
-    padding-top: 20px;
+	
+	border: 10px solid black;
+	
   }
+  .mapouter{
+	height: 100%;
+    width: 50%;
+	border: 10px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+  }
+
+  
   ul{
 	list-style-type:none;
 	height: 100%;
 	
   }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:200);
 
-body {
-    color: #858585;
-    font-family: 'Raleway',sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-}
+/* Css for About Page */
+
+
+
 
 h4,
 .h4{
@@ -289,13 +334,23 @@ h4,
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
+    padding-left: 75px;
+    padding-right: 15px;
+}
+.container_content {
+    width: 1200px;
+}
+
+.container_content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
     padding-right: 15px;
 }
 
@@ -307,7 +362,7 @@ h4,
     background-color: #fff;
     -moz-box-shadow: 0 0 8px rgba(0,0,0,.09);
     -webkit-box-shadow: 0 0 8px rgba(0,0,0,.09);
-    box-shadow: 0 0 8px rgba(0,0,0,.09);
+    box-shadow: 0 0 8px rgb(0,0,0);
     float: left;
     margin-left: 16px;
 }
@@ -319,9 +374,10 @@ h4,
     position: relative;
     margin-top: -80px;
     width:170px;
-    height:170px;
-    background: #1bbc9d;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
+	height:170px;
+	
+    /* background: #1bbc9d; */
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.09); */
 }
 
 .teamsocial
@@ -343,6 +399,7 @@ h4,
     font-size:30px;
     padding: 7px;
 }
+
 .linkedin-team
 {
     float: left;
@@ -353,6 +410,7 @@ h4,
     font-size:30px;
     padding: 7px;
 }
+
 .github-team
 {
     float: left;
@@ -363,6 +421,7 @@ h4,
     font-size:30px;
     padding: 7px;
 }
+
 .twitter-team
 {
     float: left;
@@ -376,40 +435,27 @@ h4,
 
 .facebook-team:hover
 {
-    color: #3B5998;
+    color:#3B5998;
 }
 
-.twitter-team:hover
+.linkedin-team:hover
 {
     color: #29B3E1;
 }
 
-.google-team:hover
+.github-team:hover
 {
-    color: #DE5845;
+    color: #bd2c00;
+}
+.twitter-team:hover
+{
+    color:#55acee;
 }
 
-.pinterest-team:hover
-{
-    color: #C51C23;
-}
-#right_container{
-	height: 1000px;
-	width:20%;
-    padding-top: 20px;
-}
-.main_footer {
-	position: absolute;
-	text-align: center;
-	font-family: "Roboto",Helvetica,Arial,sans-serif;
-	background-image:  -webkit-linear-gradient(left, #9b59b6 0%, #34495e 100%);
-	background-image:  -moz-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
-	background-image:  -o-linear-gradient(left, #9b59b6 0%, #e74c3c 100%);
-	background-image:  linear-gradient(to right, #9b59b6 0%, #e74c3c 100%);
-	background-image: -webkit-linear-gradient(90deg, #9b59b6 0%, #e7723c 100%);
-	background-image: -ms-linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%);
-	/* height: 100%; */
-	width: 100%;
-	height: 300px;
-	padding-top: 50px;
-}
+/* this is contact form */
+
+#success_message{ display: none;}
+
+
+
+
