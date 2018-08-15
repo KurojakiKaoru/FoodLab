@@ -133,7 +133,7 @@ html {
 .content h1 {
 	font-size: 3em;
 	text-transform: uppercase;
-	margin-top: 85px;
+	/* margin-top: 85px; */
 	margin-left: 10px;
 }
 .content h2 {
@@ -187,10 +187,10 @@ p {
 	height: 300px;
 	padding-top: 50px;
 }
-#third h2 {
+#third h1 {
 	color: white;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 #third h5 {
 	color: white;
@@ -280,13 +280,14 @@ hr {
 	
   }
 .first{
-	height: 700px;
+	height: 1100px;
 	width:100%;
 }
   .first_home{
 	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	align-items: center;
   
   }
   #first_content{
@@ -297,17 +298,17 @@ hr {
 	  text-align: center;
   }
   #left_container{
-	height: 90%;
-    width: 20%;
-    background-color: rgb(223, 149, 11);
+	height: 30%;
+    width: 50%;
+    
 	
-	border: 10px solid black;
+	
 	
   }
   .mapouter{
 	height: 100%;
     width: 50%;
-	border: 10px solid green;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -456,6 +457,117 @@ h4,
 
 #success_message{ display: none;}
 
+/* resturant llist */
 
 
 
+  
+  .rolldown-list {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .rolldown-list li {
+	padding: 1em;
+	margin-bottom: .125em;
+	display: block;
+	list-style: none;
+	text-transform: uppercase;
+  }
+  
+  .rolldown-list li {
+	visibility: hidden;
+	-webkit-animation: rolldown 5s 1;
+			animation: rolldown 5s 1;
+	-webkit-transform-origin: 50% 0;
+			transform-origin: 50% 0;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+  }
+  
+  .rolldown-list li:nth-child(2n) {
+	background-color: #444;
+  }
+  
+  .rolldown-list li:nth-child(2n+1) {
+	background-color: #333;
+  }
+  
+  
+  
+  #btnReload {
+	float: right;
+	color: #333;
+	background: #ccc;
+	text-transform: uppercase;
+	border: none;
+	padding: .5em 1em;
+  }
+  
+  #btnReload:hover {
+	background: #ddd;
+  }
+  
+  @-webkit-keyframes rolldown {
+	0% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(180deg) perspective(500px);
+			  transform: rotateX(180deg) perspective(500px);
+	}
+	70% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(-20deg);
+			  transform: rotateX(-20deg);
+	}
+	100% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(0deg);
+			  transform: rotateX(0deg);
+	}
+  }
+  
+  @keyframes rolldown {
+	0% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(180deg) perspective(500px);
+			  transform: rotateX(180deg) perspective(500px);
+	}
+	70% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(-20deg);
+			  transform: rotateX(-20deg);
+	}
+	100% {
+	  visibility: visible;
+	  -webkit-transform: rotateX(0deg);
+			  transform: rotateX(0deg);
+	}
+  }
+  
+/* welcome page */
+
+
+
+/* MAIN SECTION */
+.first_welcome {
+    background-image: url("https://image.ibb.co/jRGbJ9/success.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.first_welcome h1 {
+    font-size: 55px;
+}
+.first_welcome p {
+    font-size: 20px;
+    margin: 15px;
+}
