@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Food Lab</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
-    <!--fonts-->
-    <!-- this is font awsome library -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Food Lab</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta http-equiv="Refresh" content="10; url = about.html"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
+  <!--BootStrab Library for Javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+  <!--BootStrab Library for CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--fonts-->
+  <!-- this is font awsome library -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
- 
+<!--Link firebase Data base-->
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDk-dVZNuz-7on8a1N9k1O-jC2qswV3TlM",
+    authDomain: "foodlab-ed00d.firebaseapp.com",
+    databaseURL: "https://foodlab-ed00d.firebaseio.com",
+    projectId: "foodlab-ed00d",
+    storageBucket: "",
+    messagingSenderId: "484504418040"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- the end of Link firebase Data base-->
 </head>
+
 <body>
   <!--navigation-->    
   <div id="menu">
       <ul>
-        <li ><a style="color:white" href="index.html">Hom<span class="space">e</span></a></li>
-        <li><a  style="color:white" href="about.html">Abou<span class="space">t</span></a></li>
-        <li><a style="color:white" href="contact.html">Contac<span class="space">t</span></a></li>
+        <li><a style="color:white" href="index.html">Hom<span class="space">e</span></a></li>
+        <li><a style="color:white" href="about.html">About U<span class="space">s</span></a></li>
+        <li><a style="color:white" href="contact.html">Sign U<span class="space">p</span></a></li>
+        <li><a style="color:white" href="rest.html">Daily Schedul<span class="space">e</span></a></li>
       </ul>
   </div> 
   <div class="navT">
     <div class="icon"></div>
   </div>
   <!--navigation ends-->
+    
   <!--main content-->
-  <div class="content">
-    <div class="first first_home">
-            <!--left column-->
-            <div id="left_container">
-              <ul class="rolldown-list" id="myList">
-                <li><a style="color:white;" href="#">Cara Mia Restaurant</a></li>
-                <li><a style="color:white;" href="#">Szechuan Kitchen</a></li>
-                <li><a style="color:white;" href="#">Sapore di Casa Pizza & Restaurant</a></li>
-                <li><a style="color:white" href="#">Staunton's Bar & Restaurant</a></li>
-                <li><a style="color:white" href="#">China King</a></li>
-              </ul> 
-            </div>
-            
-            <!--right column-->
-           <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=business%20technology%20early%20college%20high%20school&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-          
-         
+  <div class="content" id="content_index">
+    <div class="first_welcome">
       
+      <h1>Welcome to FoodLab</h1>
+      <a href="contact.html" class = "button">Join Us</a>
     </div>
     <!-- <div id="second">
         
@@ -56,7 +67,9 @@
     <div id="third">
     <!--footer-->        
     <footer class="main_footer">
-      <hr>
+        <h1 style="font-size: 30px; color: black;">Follow US</h1>
+<hr>
+      
       <ul class="icons">
         <!-- I just added google website to test it working or not. we will change that later-->
         <a href="https://www.facebook.com/ZtechNetwork"> <li><i class="fa fa-facebook"></i></li></a>
